@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Open+Sans:wght@800&display=swap');
+
+* {
+    margin:0 ;
+    padding:0 ;
+    box-sizing: border-box ;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+background-color: #bba694;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+}
+
+/* Header */
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo{
+    color: #ffffd5;
+    font-size: 2em;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: #9b7239;
+    padding: 0 10px;
+    font-family: 'Lora', serif;
+    font-weight: 600;
+}
+
+header .navbar{
+    position: relative;
+    display: flex;
+}
+
+header .navbar li{
+    list-style: none;
+    margin-left: 30px ;
+}
+
+header .navbar li a{
+    text-decoration: none;
+    color: #7a551c;
+    font-weight: 600;
+    padding: 10px;
+    transition: 0.3s;
+    font-size: 0.9em;
+    text-transform: uppercase;     
+}
+
+header .navbar li a:hover{
+    color: #ffffd5;
+}
+
+/* Contenido */
+
+.contenido{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.contenido .titulobox{
+    position: relative;
+    max-width: 600px;
+}
+
+.contenido .titulobox h2{
+    text-transform: uppercase;
+    color: #7a551c;
+    line-height: 1.2;
+}
+
+.contenido .titulobox p{
+    line-height: 1.5;
+    color: #7a551c;
+    font-family: 'Lora', serif;
+    font-weight: 600;
+    margin-bottom:20px ;
+}
+
+.contenido .titulobox a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffd5;
+    background-color: #7a551c;
+    padding: 10px 20px;
+    margin-left: 30px;
+    border-radius: 20px;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+
+.contenido .titulobox a:hover{
+    color:#7a551c;
+    background-color: #ffffd5;
+}
+
+.contenido .imgBox{
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    margin-top: -50px;
+}
+
+.contenido .imgBox img{
+    width: 480px;
+}
+
+/* Circulo */
+
+.circulo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #9b7239;
+    clip-path: circle(650px at right 750px);
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Copyright */
+
+.copyright{
+    position: absolute; 
+    bottom: 0;
+    left: 800px;
+    margin-bottom: 20px;
+    padding: 0 100px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright p{
+    color: #ffffd5;
+}
+
+
+/* Redes Sociales */
+
+.redeSociales{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px 30px;
+    list-style: none;
+}
+
+.redeSociales li{
+    padding: 10px;
+}
+
+.redeSociales li a{
+    color: #ffffd5;
+    font-size: 1.5em;
+    transition: 0.3s;
+}
+
+.redeSociales li a:hover {
+    color: #7a551c;
+}
+
+/* BreakPoints */
+
+/* Pantallas Largas */
+
+@media only screen and (max-width: 1200px) {
+    .contenido .titulobox h2{
+        font-size: 3.5em;
+    }
+    .copyright{
+        left: 500px;
+    }
+}
+
+
+/* Notebook */
+
+@media only screen and (max-width: 992px) {
+    section{
+        padding: 80px;
+    }
+    header{
+        padding: 40px 80px;
+    }
+    .contenido .titulobox h2{
+        font-size: 3em;
+    }
+
+    .contenido .titulobox a{
+        margin-left: 0px;
+    }
+    .contenido .imgBox{
+        width: 400px;
+    }
+    .contenido .imgBox img{
+        width: 400px;
+    }
+    .circulo {
+        clip-path: circle(550px at right 750px);
+    }
+    .copyright{
+        left: 400px;       
+    }
+}
+
+/* Tablets */
+
+@media only screen and (max-width: 768px){
+    section{
+        padding: 40px;
+    }
+}
+
+/* Modo nocturno */
+.modo-oscuro {
+    background-color: #333;
+    color: #fff;
+}
+
+.modo-oscuro header .logo {
+    color: #fff;
+}
+
+.modo-oscuro header .navbar li a {
+    color: #fff;
+}
+
+.modo-oscuro .titulobox h2,
+.modo-oscuro .titulobox p {
+    color: #fff;
+}
+
+.modo-oscuro .titulobox a {
+    color: #333;
+    background-color: #fff;
+}
+
+.modo-oscuro .circulo {
+    background: #555;
+}
+
+.modo-oscuro .redeSociales li a {
+    color: #fff;
+}   
+
+.medium-letras{
+    font-size: 30px ;
+}
+
+.small-letras{
+    font-size: 20px;
+}
+
+.large-letras{
+    font-size: 40px;
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LM LaborSoft</title>
+    <link rel="stylesheet" href="css/estilos.css"> 
+    <link rel="shortcut icon" type="img/png" href="img/Logo_LaborSoft-removebg-preview.png"> 
+</head>
+<body>
+
+    <script>
+        const toggleMode = () => {
+            const body = document.body;
+            body.classList.toggle('modo-oscuro');
+        }
+    </script>
+    <!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_toggle_dark_mode -->
+    <!-- Modo noche/Modo dia -->
+    <button id="btnFuente" value="0">Fuente</button>
+
+    <button onclick="toggleMode()">Modo Nocturno/Día</button>
+
+
+    <section>
+        <div class="circulo"></div>
+        <header>
+            <a href="#" class="logo">LM LaborSoft</a>
+            <ul class="navbar">
+                <li><a href="#">Acerca de</a></li>
+                <li><a href="#">Nuestros Servicios</a></li>
+                <li><a href="#">Ubicación</a></li>
+                <li><a href="#">Contáctanos</a></li>
+            </ul>
+        </header>
+        <div class="contenido">
+            <div class="small-letras">
+                <h2>Cada proyecto<br></h2>
+                <h2>de <span>desarrollo web</span></h2>
+                <p>es un mundo de posibilidades, esperando a ser explorado</p>
+                <a href="#">Cotizar</a>
+            </div>
+            <div class="imgBox">
+                <img src="img/Logo_LaborSoft-removebg-preview.png" alt="Logo">
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; LM.LaborSoft - 2023</p>
+        </div>
+        <ul class="redeSociales">
+            <li><a href="https://www.instagram.com/lm.laborsoft/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></li>
+            <li><a href="https://www.linkedin.com/in/lm-laborsoft-ab9981277/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+        </ul>
+    </section>
+
+    <form id="miFormulario">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+      
+        <label for="correo">Correo electrónico:</label>
+        <input type="emails" id="correo" name="correo" required><br><br>
+      
+        <label for="contrasena">Contraseña:</label>
+        <input type="password" id="contrasena" name="contrasena" required><br><br>
+      
+        <label for="numero">Número de contacto:</label>
+        <input type="number" id="numero" name="numero" required><br><br>    
+
+        <label for="cotizacion">Cotización:</label>
+        <select id="cotizacion" name="cotizacion" required>
+
+          <option value="">Selecciona una cotización</option>
+          <option value="desarrolloW">Desarrollo Web</option>
+          <option value="desarrolloWE">Desarrollo Web con Ecommerce</option>
+          <option value="mantenimiento">Mantenimiento de equipos</option>
+
+        </select><br><br>
+        
+        <label for="suscripcion">Escribenos tus dudas:</label><br>
+        <!-- <input type="checkbox" id="suscripcion" name="suscrsipcion"><br><br> -->
+    
+        <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea><br><br>
+        <p>Ingrese la urgencia de su solicitud</p>
+        <input id="rango" type="range" min="1" max="9" step="1">
+
+
+        
+        <span id="contenedorBtnExtra"></span>
+        <!-- <input type="submit" value="Enviar"> -->
+      </form>
+      <br>
+      <p>Acepta terminos y condiciones:</p>
+      <input type="checkbox" id="checkbox" name="checkbox" value="checkbox"><br>
+      <button id="btn">Registrar</button>
+      <!-- <p>Ingrese algun archivo si es necesario</p> -->
+      <!-- <input id="archivo" type="file"><br> -->
+      <div id="contenedorTabla"></div>
+      
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="Js/Javas.js"></script>
+
+</body>
+</html>    
+<!-- cheked -->    
